@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	
+	<style>
+		.box1{
+			height: 30px;
+			position: absolute;
+			left: 1500px;
+			top: 680px;
+		}
+
+		.box2{
+			height: 70px;
+			position: : absolute;
+			left: 370px;
+			top: 190px;
+		}
+
+		
+		.box3{
+			height: 60px;
+			width: 70px;
+			position: absolute;
+			left: 1630px;
+			top: 540px;
+		}
+
+		.box4{
+			height: 40px;
+			position: absolute;
+			left: 230px;
+			top: 710px;
+		}
+
+		.box5{
+			height: 110px;
+			width: 240px;
+			position: absolute;
+			left: 1390px;
+			top: 770px;
+		}
+
+
+		
+	</style> 
+</head>
+<body>
+
+
+
+	<div class="bg-danger col-12 px-0 py-0 " style="height: 930px; background-image: url( 4.jpg); background-size: 100% 100%;">
+		<div class="col-1" style="height: 400px; background-color: #536782; border: solid; color: #261e26;">
+			<h3 class="text-light">Найти:</h3>
+			<p class="text-light p1 ">1.Увеличи-
+			тельное стекло</p>
+			<p class="text-light p2">2.Блокнот</p>
+			<p class="text-light p3">3.Песочные часы</p>
+			<p class="text-light p4">4.Компас</p>
+			<p class="text-light p5">5.Подзорная
+			труба</p>
+			<h3 class="text-light">Очки:</h3> 
+			<h3><span class="score"></span></h3>
+		</div>
+		<img src="1.png" class="col-1 box1">
+		<img src="2.png" class="col-1 box2">
+		<img src="7bg.png" class="col-1 box3">
+		<img src="4.png" class="col-1 box4">
+		<img src="1bg.png" class="col-1 box5">
+
+	</div>
+
+
+	<script>
+		let num = 0;
+		let scr = document.querySelector(".score");
+		let p1 = document.querySelector(".p1");
+		let p2 = document.querySelector(".p2");
+		let p3 = document.querySelector(".p3");
+		let p4 = document.querySelector(".p4");
+		let p5 = document.querySelector(".p5");
+
+
+		document.querySelector(".box1").onclick = function(){
+			alert("Молодец! Ты нашел увеличительное стекло");
+			document.querySelector(".box1").style.display = "none";
+			num = num +1;
+			scr.innerHTML = num;
+			p1.style.textDecoration = "line-through";
+		}
+
+		document.querySelector(".box2").onclick = function(){
+			alert("Молодец! Ты нашел блокнот");
+			document.querySelector(".box2").style.display = "none";
+			num = num +1;
+			scr.innerHTML = num;
+			p2.style.textDecoration = "line-through";
+		}
+
+		
+		document.querySelector(".box3").onclick = function(){
+			alert("Молодец! Ты нашел песочные часы");
+			document.querySelector(".box3").style.display = "none";
+			num = num +1;
+			scr.innerHTML = num;
+			p3.style.textDecoration = "line-through";
+		}
+
+		document.querySelector(".box4").onclick = function(){
+			alert("Молодец! Ты нашел компас");
+			document.querySelector(".box4").style.display = "none";
+			num = num +1;
+			scr.innerHTML = num;
+			p4.style.textDecoration = "line-through";
+		}
+
+		document.querySelector(".box5").onclick = function(){
+			alert("Молодец! Ты нашел подзорную трубу");
+			document.querySelector(".box5").style.display = "none";
+			num = num +1;
+			scr.innerHTML = num;
+			p5.style.textDecoration = "line-through";
+		}
+
+
+	</script>
+</body>
+</html>
